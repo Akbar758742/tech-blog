@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\backend\DashboardController;
+use App\Http\Controllers\Admin\PostController as AdminPostController;
+use App\Http\Controllers\Public\PostController as PublicPostController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.home');
 });
 
 // Route::get('/dashboard', function () {

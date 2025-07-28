@@ -1,7 +1,7 @@
 <div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="d-xl-none d-lg-none" href="{{ route('dashboard') }}">Dashboard</a>
+                    <a class="d-xl-none d-lg-none" href="">Dashboard</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -12,7 +12,7 @@
                                 Menu
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link {{ \Request::route()->getName()=='dashboard'? 'active':"" }} " href="" ><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+                                <a class="nav-link {{ \Request::route()->getName()=='dashboard'? 'active':"" }} " href="{{ route('dashboard') }}" ><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                                
                             </li>
                             <li class="nav-item">
@@ -21,12 +21,7 @@
                             <li class="nav-item">
                                 <a class="nav-link {{ \Request::route()->getName()=='sub-category'? 'active':"" }}" href=""data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Sub Category</a>
                             </li>
-                             <li class="nav-item">
-                                <a class="nav-link {{ \Request::route()->getName()=='product'? 'active':"" }}" href=""data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Products</a>
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link {{ \Request::route()->getName()=='admin.order'? 'active':"" }}" href=""data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>order</a>
-                            </li>
+                          
                           
                         </ul>
                     </div>
