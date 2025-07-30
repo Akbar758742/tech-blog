@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Models\backend\Category;
+use App\Models\backend\SubCategory;
+
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\category\StorePostRequest;
 use App\Http\Requests\category\UpdateStorePostRequest;
-use App\Models\Backend\Category;
-use App\Models\Backend\SubCategory;
-use Illuminate\Http\Request;
 
 class SubCategoryController extends Controller
 {
@@ -21,7 +22,7 @@ class SubCategoryController extends Controller
     }
     public function store(StorePostRequest $request){
         $subCategory = new SubCategory();
-        $subCategory->name = $request->name;
+        $subCategory->title = $request->title;
         $subCategory->category_id = $request->category;
         $subCategory->status = $request->status;
         $subCategory->order = $request->order;

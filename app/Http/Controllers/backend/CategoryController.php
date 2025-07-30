@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Models\backend\Category;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\category\StorePostRequest;
 use App\Http\Requests\category\UpdateStorePostRequest;
