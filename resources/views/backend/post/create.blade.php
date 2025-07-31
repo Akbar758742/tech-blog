@@ -174,3 +174,14 @@
         });
     </script>
 @endpush
+
+
+@push('body-scripts')
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#editor_content').summernote({
+            height: 300,
+        });
+    });
+</script>
+@endpush

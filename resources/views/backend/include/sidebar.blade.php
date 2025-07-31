@@ -22,7 +22,7 @@
                                 <a class="nav-link {{ \Request::route()->getName()=='sub-category'? 'active':"" }}" href="{{ route('sub-category') }}"data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Sub Category</a>
                             </li>
                                 <li class="nav-item">
-                                <a class="nav-link {{ \Request::route()->getName()=='sub-category'? 'active':"" }}" href="{{ route('post') }}"data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>post</a>
+                                <a class="nav-link {{ \Request::route()->getName()=='post'? 'active':"" }}" href="{{ route('post') }}"data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>post</a>
                             </li>
                           
                           

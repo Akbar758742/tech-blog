@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="{{ asset('backend') }}/{{ asset('backend') }}/assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css" />
     <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
 </head>
 
@@ -80,6 +81,7 @@
     <script src="{{ asset('backend') }}/assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
     <script src="{{ asset('backend') }}/assets/vendor/charts/c3charts/C3chartjs.js"></script>
     <script src="{{ asset('backend') }}/assets/libs/js/dashboard-ecommerce.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.js"></script>
      @stack('body-scripts')
 </body>
 
