@@ -23,9 +23,9 @@
                             @csrf
                             @method('PUT')
                             <div class="form-group">
-                                <label for="inputText3" class="col-form-label">Name</label>
-                                <input id="inputText3" name="name" type="text" value="{{ $subCategory->name }}" class="form-control @error('title') is-invalid @enderror">
-                                @error('name')
+                                <label for="inputText3" class="col-form-label">title</label>
+                                <input id="inputText3" name="title" type="text" value="{{ $subCategory->title }}" class="form-control @error('title') is-invalid @enderror">
+                                @error('title')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>
@@ -34,7 +34,7 @@
                                 <select name="category" id="inputText3" class="form-control">
                                     <option>select category</option>
                                     @foreach ($categories as $category)
-                                        <option value="{{ $category->id }}" {{ $subCategory->category_id == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+                                        <option value="{{ $category->id }}" {{ $subCategory->category_id == $category->id ? 'selected' : '' }}>{{ $category->title }}</option>
                                     @endforeach
                                 </select>
                             </div>

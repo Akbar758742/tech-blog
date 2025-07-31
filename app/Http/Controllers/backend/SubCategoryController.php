@@ -40,7 +40,7 @@ class SubCategoryController extends Controller
     }
     public function update(Request $request, $id){
         $subCategory = SubCategory::find($id);
-        $subCategory->name = $request->name;
+        $subCategory->title = $request->title;
         $subCategory->category_id = $request->category;
         $subCategory->status = $request->status;
         $subCategory->order = $request->order;

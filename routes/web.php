@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Backend\PostController;
 use App\Http\Controllers\Backend\CategoryController;
-use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\backend\DashboardController;
+use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Admin\PostController as AdminPostController;
 use App\Http\Controllers\Public\PostController as PublicPostController;
 
@@ -36,6 +37,15 @@ Route::middleware('auth')->group(function () {
     Route::put('sub-category/update/{id}', [SubCategoryController::class,'update'])->name('sub-category.update');
     Route::get('sub-category/delete/{id}', [SubCategoryController::class,'destroy'])->name('sub-category.destroy');
 
+
+     //posts
+    Route::get('post', [PostController::class,'index'])->name('post');
+    Route::get('post/create', [PostController::class,'create'])->name('post.create');
+    Route::post('post/store', [PostController::class,'store'])->name('post.store');
+    Route::get('post/edit/{id}', [PostController::class,'edit'])->name('post.edit');
+    Route::put('post/update/{id}', [PostController::class,'update'])->name('post.update');
+    Route::get('post/delete/{id}', [PostController::class,'destroy'])->name('post.destroy');
+       Route::post('get-subcategory', [postController::class,'getSubCategory'])->name('get-subcategory');
 
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
